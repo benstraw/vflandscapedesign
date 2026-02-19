@@ -1,0 +1,45 @@
+---
+---
+
+<section id="service-area" class="py-24 lg:py-32 px-6 bg-sage/10">
+  <div class="max-w-7xl mx-auto">
+    <!-- Heading -->
+    <div class="mb-10">
+      <span class="font-body text-sm font-medium tracking-widest uppercase text-forest">
+        Coverage
+      </span>
+      <h2 class="font-display text-4xl lg:text-5xl font-bold text-ink mt-3 mb-6">
+        Where We Work
+      </h2>
+      <p class="font-body text-base lg:text-lg text-ink/70 max-w-2xl leading-relaxed">
+        We proudly serve homeowners across the Philadelphia Main Line, Chester County, and
+        surrounding communities including Malvern, Wayne, Berwyn, Paoli, Devon, and Newtown
+        Square.
+      </p>
+    </div>
+
+    <!-- Map -->
+    <div class="w-full overflow-hidden mt-10">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97942.07815743063!2d-75.61304684179688!3d40.03677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6e2900019a565%3A0x887d6a34f58d335f!2sMalvern%2C%20PA%2019355!5e0!3m2!1sen!2sus!4v1708000000000"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Service area map centered on Malvern, PA"
+        class="grayscale hover:grayscale-0 transition-all duration-500"
+      ></iframe>
+    </div>
+
+    <!-- Towns list -->
+    <div class="mt-10 flex flex-wrap gap-3">
+      {['Malvern', 'Wayne', 'Berwyn', 'Paoli', 'Devon', 'Newtown Square', 'Exton', 'Villanova', 'Haverford', 'Bryn Mawr'].map((town) => (
+        <span class="font-body text-sm font-medium text-forest bg-forest/10 px-4 py-1.5">
+          {town}
+        </span>
+      ))}
+    </div>
+  </div>
+</section>

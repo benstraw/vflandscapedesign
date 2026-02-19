@@ -1,0 +1,118 @@
+---
+---
+
+<nav
+  id="nav"
+  class="fixed top-0 left-0 right-0 z-50 bg-warm-white border-b border-transparent transition-colors duration-300"
+>
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16">
+    <!-- Logo -->
+    <a
+      href="#"
+      class="font-display text-lg font-bold text-ink tracking-tight hover:text-forest transition-colors"
+    >
+      matty-nice landscaping
+    </a>
+
+    <!-- Desktop nav links -->
+    <ul class="hidden md:flex items-center gap-8 font-body text-sm font-medium text-ink">
+      <li>
+        <a href="#services" class="hover:text-forest transition-colors">Services</a>
+      </li>
+      <li>
+        <a href="#about" class="hover:text-forest transition-colors">About</a>
+      </li>
+      <li>
+        <a href="#service-area" class="hover:text-forest transition-colors">Service Area</a>
+      </li>
+      <li>
+        <a
+          href="#contact"
+          class="ml-2 px-4 py-2 bg-forest text-white text-sm font-medium hover:bg-earth transition-colors"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+
+    <!-- Mobile hamburger -->
+    <button
+      id="hamburger"
+      aria-label="Toggle menu"
+      aria-expanded="false"
+      class="md:hidden flex flex-col justify-center items-center w-8 h-8 gap-1.5"
+    >
+      <span class="hamburger-line block w-6 h-0.5 bg-ink transition-transform duration-300"></span>
+      <span class="hamburger-line block w-6 h-0.5 bg-ink transition-opacity duration-300"></span>
+      <span class="hamburger-line block w-6 h-0.5 bg-ink transition-transform duration-300"></span>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <div
+    id="mobile-menu"
+    class="hidden md:hidden bg-warm-white border-t border-gray-100"
+  >
+    <ul class="flex flex-col px-6 py-4 gap-4 font-body text-sm font-medium text-ink">
+      <li>
+        <a href="#services" class="mobile-link block hover:text-forest transition-colors">Services</a>
+      </li>
+      <li>
+        <a href="#about" class="mobile-link block hover:text-forest transition-colors">About</a>
+      </li>
+      <li>
+        <a href="#service-area" class="mobile-link block hover:text-forest transition-colors">Service Area</a>
+      </li>
+      <li>
+        <a href="#contact" class="mobile-link block hover:text-forest transition-colors">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+  // Scroll border
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (nav) {
+      nav.classList.toggle('border-gray-200', window.scrollY > 10);
+      nav.classList.toggle('border-transparent', window.scrollY <= 10);
+    }
+  });
+
+  // Hamburger toggle
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const lines = hamburger?.querySelectorAll('.hamburger-line');
+
+  hamburger?.addEventListener('click', () => {
+    const isOpen = mobileMenu?.classList.contains('hidden') === false;
+    mobileMenu?.classList.toggle('hidden');
+    hamburger.setAttribute('aria-expanded', String(!isOpen));
+
+    if (lines && lines.length === 3) {
+      if (!isOpen) {
+        (lines[0] as HTMLElement).style.transform = 'translateY(8px) rotate(45deg)';
+        (lines[1] as HTMLElement).style.opacity = '0';
+        (lines[2] as HTMLElement).style.transform = 'translateY(-8px) rotate(-45deg)';
+      } else {
+        (lines[0] as HTMLElement).style.transform = '';
+        (lines[1] as HTMLElement).style.opacity = '';
+        (lines[2] as HTMLElement).style.transform = '';
+      }
+    }
+  });
+
+  // Close mobile menu on link click
+  document.querySelectorAll('.mobile-link').forEach((link) => {
+    link.addEventListener('click', () => {
+      mobileMenu?.classList.add('hidden');
+      hamburger?.setAttribute('aria-expanded', 'false');
+      if (lines && lines.length === 3) {
+        (lines[0] as HTMLElement).style.transform = '';
+        (lines[1] as HTMLElement).style.opacity = '';
+        (lines[2] as HTMLElement).style.transform = '';
+      }
+    });
+  });
+</script>
