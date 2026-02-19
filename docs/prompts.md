@@ -25,6 +25,18 @@ A chronological record of prompts used to build and evolve this project. Add a n
 
 ---
 
+## 2026-02-19 — Docs audit and update
+
+**Prompt:**
+> just make sure all the docs files are up to date then I will stop working on this for now.
+
+**What was changed:**
+- `docs/architecture.md` — updated Astro version 4.x → 5.x, added @vercel/analytics and @vercel/speed-insights to tech stack table, added prompts.md to file tree
+- `docs/deployment.md` — replaced "Vercel Analytics (optional)" stub with accurate status: installed, enabled, dashboard URL noted
+- `docs/components.md` — added note to Layout.astro section about Analytics and SpeedInsights components
+
+---
+
 ## 2026-02-19 — Add Vercel Analytics + Speed Insights
 
 **Prompt:**

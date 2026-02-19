@@ -14,6 +14,7 @@ All components live in `src/components/`. Each is a standalone `.astro` file wit
 - SEO meta includes: `title`, `description`, `og:type`, `og:url`, `og:title`, `og:description`, `og:image`, Twitter card tags, and `canonical`
 - `og:image` points to `/og-image.jpg` — this file doesn't exist yet; add a real image at `public/og-image.jpg` (1200×630px recommended)
 - Accepts `title` and `description` props with sensible defaults
+- `<Analytics />` from `@vercel/analytics/astro` and `<SpeedInsights />` from `@vercel/speed-insights/astro` are injected just before `</body>`
 
 ---
 

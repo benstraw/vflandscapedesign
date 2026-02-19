@@ -55,10 +55,13 @@ Set the environment to **Production** (and optionally Preview + Development).
 
 Every PR or branch push gets a unique preview URL (e.g., `vflandscapedesign-abc123-matts.vercel.app`). Use these to review changes before merging to `main`.
 
-## Vercel Analytics (optional)
+## Vercel Analytics
 
-Add `@vercel/analytics` to track page views without cookies:
-```bash
-npm install @vercel/analytics
-```
-Then inject `<Analytics />` in `Layout.astro`. Free tier includes 2,500 events/month.
+**Status: installed and enabled.**
+
+`@vercel/analytics` and `@vercel/speed-insights` are both installed and the components are injected in `Layout.astro`. The Analytics dashboard is active at:
+`https://vercel.com/benstraws-projects/vflandscapedesign/analytics`
+
+Speed Insights is installed in the code but requires a one-click Enable in the Vercel dashboard → **Speed Insights** tab. Note: Hobby tier allows Speed Insights on only one project at a time.
+
+Data appears in the dashboards in real-time as visitors hit the site.

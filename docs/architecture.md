@@ -8,10 +8,12 @@ The site is a **static single-page marketing website** built with Astro and Tail
 
 | Layer | Technology | Why |
 |---|---|---|
-| Framework | Astro 4.x | Zero-JS by default, component model, great static output |
+| Framework | Astro 5.x | Zero-JS by default, component model, great static output |
 | Styling | Tailwind CSS 3.x | Utility-first, no unused CSS in prod via purge |
 | Forms | Formspree | No-backend form handling with spam filtering |
 | Hosting | Vercel | Free tier, auto-deploy from GitHub, custom domains |
+| Analytics | @vercel/analytics | Page views, visitors, referrers — free on Hobby tier |
+| Speed Insights | @vercel/speed-insights | Real-user Core Web Vitals — free on Hobby tier |
 | Fonts | Google Fonts | Playfair Display + Inter, self-hosted by Google CDN |
 | Images | Unsplash | Placeholder images; swap for real photos when ready |
 | Maps | Google Maps Embed | No API key required for basic embed |
@@ -56,7 +58,8 @@ The site is a **static single-page marketing website** built with Astro and Tail
     ├── forms.md              — Formspree setup and configuration
     ├── deployment.md         — Vercel deploy steps
     ├── email.md              — Zoho Mail setup
-    └── content.md            — All copy and placeholder content
+    ├── content.md            — All copy and placeholder content
+    └── prompts.md            — Chronological log of all prompts used to build and modify the site
 ```
 
 ## Component Data Flow
