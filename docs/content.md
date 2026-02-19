@@ -34,7 +34,7 @@ All copy, images, and placeholder values in one place. Edit the relevant compone
 
 ### About
 - **Heading:** `Built on Craftsmanship`
-- **Body:** matty-nice landscaping was founded by Matt with a simple belief: great landscapes require great attention. We work exclusively with homeowners who value quality over shortcuts. Every project is personally managed from the first site visit through final installation and ongoing care.
+- **Body:** Valley Forge Landscape Design was founded by Matt with a simple belief: great landscapes require great attention. We work exclusively with homeowners who value quality over shortcuts. Every project is personally managed from the first site visit through final installation and ongoing care.
 - **Tag:** Serving the Philadelphia Main Line and Chester County, PA.
 
 ### Service Area
@@ -49,7 +49,7 @@ All copy, images, and placeholder values in one place. Edit the relevant compone
 - **Phone:** (610) 555-0100
 
 ### Footer
-- **Copyright:** © 2026 matty-nice landscaping. All rights reserved.
+- **Copyright:** © 2026 Valley Forge Landscape Design. All rights reserved.
 
 ---
 
@@ -91,6 +91,6 @@ https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97942.07815743063!2d-75.61
 
 ## SEO Meta (Layout.astro)
 
-- **Title:** `matty-nice landscaping — Premium Landscape Design, Philadelphia Main Line & Chester County`
+- **Title:** `Valley Forge Landscape Design — Premium Landscape Design, Philadelphia Main Line & Chester County`
 - **Description:** `Premium landscape design, hardscaping, and lawn care for discerning homeowners in the Philadelphia Main Line and Chester County, PA.`
 - **og:image:** `/og-image.jpg` — **create this file** at `public/og-image.jpg` (1200×630px, JPG)

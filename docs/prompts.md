@@ -25,6 +25,19 @@ A chronological record of prompts used to build and evolve this project. Add a n
 
 ---
 
+## 2026-02-19 — Add Vercel Analytics + Speed Insights
+
+**Prompt:**
+> Implement the following plan: # Plan: Add Vercel Analytics + Speed Insights
+
+**What was changed:**
+- Installed `@vercel/analytics` and `@vercel/speed-insights` (2 packages, 0 vulnerabilities)
+- Updated `src/layouts/Layout.astro`: added default imports for `Analytics` and `SpeedInsights`, added both components just before `</body>`
+- Note: packages export default (not named) — corrected import syntax from `{ Analytics }` to default import
+- Build verified: `astro build` → 1 page, 0 errors
+
+---
+
 ## 2026-02-19 — Prompts log + CLAUDE.md update
 
 **Prompt:**

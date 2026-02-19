@@ -1,6 +1,6 @@
 # vflandscapedesign
 
-Premium single-page marketing website for **matty-nice landscaping** — a high-end residential landscaping business serving the Philadelphia Main Line and Chester County, PA.
+Premium single-page marketing website for **Valley Forge Landscape Design** — a high-end residential landscaping business serving the Philadelphia Main Line and Chester County, PA.
 
 Built with Astro (static output) and Tailwind CSS. Deployed on Vercel. Contact form via Formspree. Business email via Zoho Mail.
 

@@ -1,11 +1,14 @@
 ---
+import Analytics from '@vercel/analytics/astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
+
 interface Props {
   title?: string;
   description?: string;
 }
 
 const {
-  title = 'matty-nice landscaping — Premium Landscape Design, Philadelphia Main Line & Chester County',
+  title = 'Valley Forge Landscape Design — Premium Landscape Design, Philadelphia Main Line & Chester County',
   description = 'Premium landscape design, hardscaping, and lawn care for discerning homeowners in the Philadelphia Main Line and Chester County, PA.',
 } = Astro.props;
 
@@ -68,5 +71,7 @@ const ogImage = `${siteUrl}/og-image.jpg`;
   </head>
   <body>
     <slot />
+    <Analytics />
+    <SpeedInsights />
   </body>
 </html>
