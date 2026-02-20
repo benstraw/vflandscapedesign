@@ -58,3 +58,21 @@ A chronological record of prompts used to build and evolve this project. Add a n
 **What was built:**
 - `docs/prompts.md` — this file; chronological log of all project prompts
 - `CLAUDE.md` — added instruction #11 to keep `docs/prompts.md` updated after each session
+
+---
+
+## 2026-02-20 — Content and image updates
+
+**Prompts:**
+> update the phone number to 610 930 3462
+> remove the stats section with 15 years and number of properties
+> lets use a flower bed with some nice rocks and landscaping in a suburban environment from unsplash for the about hero and the OG
+> how about this one here https://unsplash.com/photos/a-brick-walkway-leads-to-a-lush-green-yard-HLjRqDhs76c
+> oh no, i liked the scoop of dirt for about. just the other 2
+
+**What was changed:**
+- `Contact.astro` — updated phone number to (610) 930-3462 (href and display text)
+- `About.astro` — removed placeholder stats block (15+ years experience, 200+ properties transformed)
+- `Hero.astro` — updated background image to Unsplash `photo-1706267992405` (brick walkway / lush green yard)
+- `Layout.astro` — updated OG image to same photo, cropped 1200×630 for social sharing; no longer references local `/og-image.jpg`
+- `About.astro` — hero image kept as original `photo-1416879595882` (restored after brief swap)
