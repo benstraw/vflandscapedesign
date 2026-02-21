@@ -4,6 +4,19 @@ A chronological record of prompts used to build and evolve this project. Add a n
 
 ---
 
+## 2026-02-20 — Content edits across 4 components
+
+**Prompt:**
+> Implement the following plan: Content edits across 4 components
+
+**Changes:**
+- Hero: added "area" to end of subheadline ("…Chester County area.")
+- About: removed " by Matt" from founding sentence
+- ServiceArea: truncated coverage paragraph to "We proudly serve homeowners across the Philadelphia Main Line."
+- Contact: updated email to matt@vflandscapedesign.com (href + display text + error message); made phone field required (label shows *, added `required` attribute)
+
+---
+
 ## 2026-02-19 — Initial site build + docs
 
 **Prompt:**
